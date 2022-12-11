@@ -20,7 +20,7 @@ router.get('/:id',async(req,res)=>{
     }
 })
 
-router.post('/',async(req,res)=>{
+router.post('/addUser',async(req,res)=>{
     const user= new userData({
         name:req.body.name,
         role:req.body.role,
